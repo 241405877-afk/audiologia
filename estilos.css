@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #244653;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: white;
+    box-shadow: 0 2px 12px #00000010;
+}
+
+.logo {
+    color: #098b83;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #244653;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #12aaa0;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 75px 7%;
+    background: #e6f8f7;
+}
+
+.contenido {
+    flex: 1;
+}
+
+.contenido h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.contenido p {
+    margin-bottom: 28px;
+    font-size: 18px;
+}
+
+.boton {
+    display: inline-block;
+    background: #0aa69d;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover,
+button:hover {
+    background: #087c76;
+}
+
+.imagen {
+    flex: 1;
+}
+
+.imagen img {
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.servicios {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.tarjeta {
+    padding: 30px 22px;
+    border: 1px solid #dceeed;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #2446530d;
+    background: white;
+}
+
+.tarjeta h3 {
+    margin: 15px 0;
+}
+
+.icono {
+    display: inline-grid;
+    place-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background: #e1f7f3;
+    color: #098b83;
+    font-size: 28px;
+}
+
+.nosotros {
+    padding: 65px 10%;
+    text-align: center;
+    background: #f3fbfa;
+}
+
+.nosotros p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contacto {
+    padding: 65px 20px;
+    background: #e6f8f7;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 25px auto 0;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdedd;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+    background: #0aa69d;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#respuesta {
+    margin-top: 18px;
+}
+
+footer {
+    padding: 25px;
+    background: #183c50;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .inicio {
+        flex-direction: column;
+        padding: 45px 6%;
+    }
+
+    .contenido h1 {
+        font-size: 36px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+}
